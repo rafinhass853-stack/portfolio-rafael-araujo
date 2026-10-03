@@ -1,18 +1,18 @@
 /* App.css - Substitua todo o conteúdo */
 :root {
-  --bg-primary: #0a0e1a;
-  --bg-secondary: #131b33;
-  --bg-card: #1a2444;
-  --accent-blue: #38bdf8;
-  --accent-green: #10b981;
-  --accent-purple: #8b5cf6;
-  --accent-yellow: #f59e0b;
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
+  --bg-primary: #f7fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: #f1f5f9;
+  --accent-blue: #2563eb;
+  --accent-green: #16a34a;
+  --accent-purple: #7c3aed;
+  --accent-yellow: #d97706;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
   --text-muted: #64748b;
-  --border-color: #1e293b;
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  --gradient: linear-gradient(135deg, #38bdf8, #8b5cf6);
+  --border-color: #e2e8f0;
+  --shadow: 0 12px 36px rgba(15, 23, 42, 0.10);
+  --gradient: linear-gradient(135deg, #2563eb, #7c3aed);
 }
 
 * {
@@ -63,7 +63,7 @@ body {
 }
 
 .header.scrolled {
-  background: rgba(10, 14, 26, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
   padding: 12px 0;
@@ -1595,7 +1595,7 @@ section {
   gap: 0;
   border: 1px solid var(--border-color);
   border-radius: 16px;
-  background: rgba(19,27,51,.65);
+  background: rgba(255,255,255,.82);
   overflow: hidden;
 }
 .career-summary > div {
@@ -1667,7 +1667,7 @@ section {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(19,27,51,.92);
+  background: rgba(255,255,255,.94);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   text-decoration: none;
@@ -1690,7 +1690,7 @@ section {
     flex-direction: column;
     gap: 0;
     padding: 10px;
-    background: rgba(10,14,26,.97);
+    background: rgba(255,255,255,.98);
     border: 1px solid var(--border-color);
     border-radius: 14px;
     box-shadow: var(--shadow);
@@ -1740,7 +1740,7 @@ section {
   border: 1px solid rgba(56, 189, 248, 0.24);
   border-radius: 999px;
 
-  background: rgba(19, 27, 51, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   color: var(--text-primary);
 
   font-size: 0.78rem;
@@ -1781,4 +1781,59 @@ section {
     padding: 9px 12px;
     font-size: 0.72rem;
   }
+}
+
+
+/* Light portfolio refresh */
+body {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(37,99,235,.07), transparent 28%),
+    radial-gradient(circle at 90% 20%, rgba(124,58,237,.06), transparent 25%),
+    var(--bg-primary);
+}
+
+.header {
+  background: rgba(255,255,255,.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.header.scrolled {
+  background: rgba(255,255,255,.94);
+  border-bottom-color: rgba(226,232,240,.9);
+}
+
+.hero-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+}
+
+.about-section,
+.projects-section,
+.career-plus-section,
+.footer {
+  background: #ffffff;
+}
+
+.skills-section,
+.experience-section,
+.contact-section {
+  background: #f7fafc;
+}
+
+.feature-card,
+.project-card,
+.contact-form,
+.timeline-card,
+.career-panel,
+.recommendations-block,
+.contact-cta,
+.contact-social-panel {
+  box-shadow: 0 10px 30px rgba(15,23,42,.06);
+}
+
+.online-visitors {
+  background: rgba(255,255,255,.96);
+  color: var(--text-primary);
+  border-color: rgba(37,99,235,.18);
+  box-shadow: 0 10px 30px rgba(15,23,42,.12);
 }
