@@ -3,6 +3,7 @@ import Header from './Header';
 import Hero from './Hero';
 import About from './About';
 import Experience from './Experience';
+import CareerPlus from './CareerPlus';
 import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
@@ -28,6 +29,7 @@ function App() {
         <Hero />
         <About />
         <Experience />
+        <CareerPlus />
         <Skills />
         <Projects />
         <Contact />
