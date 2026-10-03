@@ -668,6 +668,50 @@ section {
   margin-bottom: 4px;
 }
 
+.project-eyebrow {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: var(--project-color);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.project-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0 0 18px;
+  padding: 13px 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+.project-highlights span {
+  color: var(--text-secondary);
+  font-size: .78rem;
+  line-height: 1.35;
+}
+.project-highlights span::first-letter {
+  color: var(--project-color);
+}
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+  color: var(--text-primary);
+  font-size: .84rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .2s ease, transform .2s ease;
+}
+.project-link:hover {
+  color: var(--project-color);
+  transform: translateX(2px);
+}
+
+
 .project-card h4 {
   font-size: 0.95rem;
   color: var(--accent-blue);
