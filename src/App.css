@@ -1481,10 +1481,31 @@ section {
 /* Career / company branding */
 .timeline-company { display: flex; gap: 16px; align-items: flex-start; }
 .company-logo-wrap {
-  width: 58px; height: 58px; flex: 0 0 58px; display: flex; align-items: center; justify-content: center;
-  background: #fff; border-radius: 14px; border: 1px solid var(--border-color); overflow: hidden;
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, rgba(56,189,248,.14), rgba(99,102,241,.08));
+  border-radius: 14px;
+  border: 1px solid rgba(56,189,248,.22);
+  overflow: hidden;
 }
-.company-logo { width: 42px; height: 42px; object-fit: contain; }
+.company-logo-mark {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: var(--bg-secondary);
+  color: var(--accent-blue);
+  border: 1px solid rgba(56,189,248,.25);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
 .timeline-company .timeline-top { flex: 1; }
 
 .career-plus-section { background: var(--bg-secondary); }
@@ -1516,7 +1537,7 @@ section {
 @media (max-width: 768px) {
   .timeline-company { gap: 10px; }
   .company-logo-wrap { width: 48px; height: 48px; flex-basis: 48px; }
-  .company-logo { width: 34px; height: 34px; }
+  .company-logo-mark { width: 34px; height: 34px; font-size: .7rem; }
   .career-plus-grid, .recommendations-grid { grid-template-columns: 1fr; }
 }
 
@@ -1565,21 +1586,6 @@ section {
   border-color: rgba(16,185,129,.5);
   box-shadow: 0 0 0 5px rgba(16,185,129,.07);
 }
-.company-logo-fallback {
-  position: absolute;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  background: var(--bg-secondary);
-  color: var(--accent-blue);
-  font-weight: 800;
-  font-size: .8rem;
-}
-.company-logo-wrap { position: relative; }
-.company-logo[style*="display: none"] + .company-logo-fallback { display: flex; }
 .timeline-card { box-shadow: 0 8px 24px rgba(0,0,0,.12); }
 @media (max-width: 768px) {
   .career-summary { margin-top: -12px; flex-direction: column; }
