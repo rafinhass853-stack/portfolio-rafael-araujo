@@ -4,25 +4,25 @@ import { BriefcaseBusiness, MapPin, Users, BarChart3, Route, Laptop2 } from 'luc
 const experiences = [
   {
     current: true,
-    company: 'TG Logística e Transportes',
-    role: 'Gestão de Operações Logísticas',
+    company: 'Eixo SP',
+    role: 'Analista de Frotas',
     period: 'Atual',
     location: 'São Paulo',
-    description: 'Atuação em operações de transporte e carga seca/sider, conectando gestão de pessoas, disponibilidade de frota, indicadores e melhoria contínua.',
+    description: 'Atuação na gestão de frota da concessionária rodoviária, com foco em manutenção, disponibilidade, custos e indicadores operacionais.',
     highlights: [
-      { icon: Users, text: 'Gestão operacional com responsabilidade sobre mais de 150 motoristas' },
-      { icon: BarChart3, text: 'Acompanhamento de KPIs e análise de desvios operacionais' },
-      { icon: Route, text: 'Programação, tratativas de ocorrências e apoio à produtividade da operação' },
-      { icon: Laptop2, text: 'Desenvolvimento de soluções e automações para problemas reais do transporte' }
+      { icon: Users, text: 'Planejamento, programação e controle de manutenção (PPCM)' },
+      { icon: BarChart3, text: 'Controle de ordens de serviço, peças, mão de obra e disponibilidade' },
+      { icon: Route, text: 'Acompanhamento de custos, produtividade e desempenho das oficinas' },
+      { icon: Laptop2, text: 'Análise de indicadores e apoio à melhoria da disponibilidade da frota' }
     ]
   },
   {
     current: false,
     company: 'Trajetória em Transporte & Logística',
     role: 'Experiências anteriores em operações',
-    period: '2014 — 2025',
+    period: 'Experiências anteriores',
     location: 'Interior de São Paulo',
-    description: 'Mais de sete anos de experiência no setor de transporte, com passagem por diferentes contextos operacionais e evolução para posições de maior responsabilidade em gestão, indicadores e tecnologia aplicada.',
+    description: 'Trajetória construída no setor de transporte e logística, com experiência em operações, frota, motoristas, indicadores e melhoria de processos.',
     highlights: [
       { icon: BriefcaseBusiness, text: 'Operações de transporte, carga seca e gestão de frota' },
       { icon: Users, text: 'Relacionamento e tratativas com motoristas, clientes e equipes' },
