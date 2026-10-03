@@ -1519,3 +1519,73 @@ section {
   .company-logo { width: 34px; height: 34px; }
   .career-plus-grid, .recommendations-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Experience timeline 2026 - compact accordion */
+.career-summary {
+  max-width: 950px;
+  margin: -22px auto 34px;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: rgba(19,27,51,.65);
+  overflow: hidden;
+}
+.career-summary > div {
+  flex: 1;
+  min-width: 0;
+  padding: 16px 18px;
+  text-align: center;
+  border-right: 1px solid var(--border-color);
+}
+.career-summary > div:last-child { border-right: 0; }
+.career-summary strong { display: block; color: var(--text-primary); font-size: .95rem; }
+.career-summary span { color: var(--text-muted); font-size: .76rem; }
+.timeline-details { width: 100%; }
+.timeline-details summary { list-style: none; cursor: pointer; }
+.timeline-details summary::-webkit-details-marker { display: none; }
+.timeline-summary { transition: border-color .25s ease, transform .25s ease, background .25s ease; }
+.timeline-summary:hover { border-color: rgba(56,189,248,.35); }
+.timeline-details[open] .timeline-summary { border-color: rgba(56,189,248,.38); border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.timeline-chevron { flex: 0 0 auto; color: var(--text-muted); transition: transform .25s ease; margin-top: 3px; }
+.timeline-details[open] .timeline-chevron { transform: rotate(180deg); color: var(--accent-blue); }
+.timeline-content {
+  padding: 0 26px 24px;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(56,189,248,.38);
+  border-top: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.timeline-content > p { color: var(--text-secondary); margin: 0 0 18px; line-height: 1.7; }
+.current-role .timeline-marker {
+  color: var(--accent-green);
+  border-color: rgba(16,185,129,.5);
+  box-shadow: 0 0 0 5px rgba(16,185,129,.07);
+}
+.company-logo-fallback {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--bg-secondary);
+  color: var(--accent-blue);
+  font-weight: 800;
+  font-size: .8rem;
+}
+.company-logo-wrap { position: relative; }
+.company-logo[style*="display: none"] + .company-logo-fallback { display: flex; }
+.timeline-card { box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+@media (max-width: 768px) {
+  .career-summary { margin-top: -12px; flex-direction: column; }
+  .career-summary > div { border-right: 0; border-bottom: 1px solid var(--border-color); }
+  .career-summary > div:last-child { border-bottom: 0; }
+  .timeline-content { padding: 0 20px 20px; }
+  .timeline-company { align-items: flex-start; }
+  .timeline-chevron { margin-left: auto; }
+}
