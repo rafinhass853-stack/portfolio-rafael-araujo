@@ -50,23 +50,23 @@ const experiences = [
     { icon: ShieldCheck, text: 'Abertura de SM e análise de risco das viagens' },
     { icon: BarChart3, text: 'Relatórios de fadiga e controle de jornada' }
   ]},
-  { company: 'BK bank', role: 'Assistente administrativo', period: 'mar. de 2021 — abr. de 2021', location: 'Ribeirão Preto, SP · No local', description: 'Atuação em rotinas administrativas, atendimento ao cliente e utilização de sistemas operacionais para suporte às atividades da unidade.', highlights: [
+  { logoUrl: 'https://bkipsa.com.br/images/logo.svg', company: 'BK bank', role: 'Assistente administrativo', period: 'mar. de 2021 — abr. de 2021', location: 'Ribeirão Preto, SP · No local', description: 'Atuação em rotinas administrativas, atendimento ao cliente e utilização de sistemas operacionais para suporte às atividades da unidade.', highlights: [
     { icon: Laptop2, text: 'Operação e atualização de sistemas internos' },
     { icon: Users, text: 'Atendimento e suporte às demandas dos clientes' },
     { icon: ClipboardList, text: 'Organização de informações e rotinas administrativas' }
   ]},
-  { company: 'Santa Casa São Carlos', role: 'Atendente de farmácia', period: 'abr. de 2020 — set. de 2020', location: 'São Carlos, SP', description: 'Atuação na farmácia hospitalar, apoiando a separação e organização de medicamentos conforme prescrições e solicitações internas, além dos registros e controles no sistema.', highlights: [
+  { logoUrl: 'https://www.santacasasaocarlos.com.br/Content/img/Header/LogoSTA%20vertical.png', company: 'Santa Casa São Carlos', role: 'Atendente de farmácia', period: 'abr. de 2020 — set. de 2020', location: 'São Carlos, SP', description: 'Atuação na farmácia hospitalar, apoiando a separação e organização de medicamentos conforme prescrições e solicitações internas, além dos registros e controles no sistema.', highlights: [
     { icon: Hospital, text: 'Rotina de farmácia hospitalar em ambiente de saúde' },
     { icon: Package, text: 'Separação e conferência de medicamentos conforme prescrição médica e solicitações' },
     { icon: Laptop2, text: 'Baixas, registros e movimentações no sistema MVSOUL' },
     { icon: ClipboardList, text: 'Organização, controle de estoque e apoio às rotinas de dispensação' }
   ]},
-  { company: 'Arteris S.A.', role: 'Assistente administrativo CCA', period: 'out. de 2018 — set. de 2019', location: 'Ribeirão Preto e Região', description: 'Atuação administrativa no Centro de Controle e Arrecadação, apoiando a análise das movimentações das praças de pedágio e a regularização de ocorrências.', highlights: [
+  { logoUrl: 'https://www.arteris.com.br/wp-content/uploads/2024/01/logo-arteris.png', company: 'Arteris S.A.', role: 'Assistente administrativo CCA', period: 'out. de 2018 — set. de 2019', location: 'Ribeirão Preto e Região', description: 'Atuação administrativa no Centro de Controle e Arrecadação, apoiando a análise das movimentações das praças de pedágio e a regularização de ocorrências.', highlights: [
     { icon: BarChart3, text: 'Análise de discrepâncias entre vias manuais e automáticas' },
     { icon: ClipboardList, text: 'Abertura e acompanhamento de chamados' },
     { icon: CreditCard, text: 'Acompanhamento da liquidação de turnos dos operadores' }
   ]},
-  { company: 'Arteris S.A.', role: 'Operador de pedágio', period: 'nov. de 2016 — out. de 2018', location: 'São Simão, SP', description: 'Operação de praça de pedágio, atendimento ao usuário e execução das rotinas de arrecadação e controle de passagem.', highlights: [
+  { logoUrl: 'https://www.arteris.com.br/wp-content/uploads/2024/01/logo-arteris.png', company: 'Arteris S.A.', role: 'Operador de pedágio', period: 'nov. de 2016 — out. de 2018', location: 'São Simão, SP', description: 'Operação de praça de pedágio, atendimento ao usuário e execução das rotinas de arrecadação e controle de passagem.', highlights: [
     { icon: CreditCard, text: 'Operação de caixa e arrecadação de tarifas' },
     { icon: Users, text: 'Atendimento direto aos usuários da rodovia' },
     { icon: ClipboardList, text: 'Conferência e cumprimento dos procedimentos operacionais da praça' }
