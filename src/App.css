@@ -1916,3 +1916,67 @@ body {
   .chart-column > span { font-size:.58rem; }
   .visits-dashboard-header { padding:22px 14px; }
 }
+
+
+/* Hero — foto alinhada à direita no espaço livre */
+.hero-visual-repositioned {
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 12px;
+}
+
+.hero-visual-repositioned .profile-image-container {
+  width: 360px;
+  height: 360px;
+  margin-left: auto;
+  margin-right: 0;
+  transform: none;
+  z-index: 3;
+}
+
+.hero-visual-repositioned .profile-image {
+  border-width: 5px;
+  box-shadow: 0 20px 60px rgba(15,23,42,.14);
+}
+
+.hero-visual-repositioned .profile-orb {
+  width: 420px;
+  height: 420px;
+}
+
+.hero-visual-repositioned .floating-cards {
+  pointer-events: none;
+}
+
+.hero-visual-repositioned .card-1 {
+  left: 2%;
+  top: 8%;
+}
+
+.hero-visual-repositioned .card-2 {
+  right: -2%;
+  top: 62%;
+}
+
+.hero-visual-repositioned .card-3 {
+  left: 12%;
+  bottom: 8%;
+}
+
+@media (max-width: 900px) {
+  .hero-visual-repositioned {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .hero-visual-repositioned .profile-image-container {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+  }
+
+  .hero-visual-repositioned .profile-orb {
+    width: 330px;
+    height: 330px;
+  }
+}
