@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ExternalLink, Mail } from 'lucide-react';
+import { ArrowDown, Mail, Phone } from 'lucide-react';
 
 const SocialIcons = {
   LinkedIn: () => <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C24 23.227 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>,
@@ -24,6 +24,7 @@ export default function Hero() {
             <a href="#projetos" className="btn-secondary">Ver projetos <ArrowDown size={18} /></a>
           </div>
           <div className="hero-social">
+            <a href="https://wa.me/5516988318626" target="_blank" rel="noopener noreferrer" className="social-link whatsapp" aria-label="WhatsApp"><Phone size={22} /></a>
             <a href="https://www.linkedin.com/in/rafael-araujo1992/" target="_blank" rel="noopener noreferrer" className="social-link linkedin" aria-label="LinkedIn"><SocialIcons.LinkedIn /></a>
             <a href="https://github.com/rafinhass853-stack" target="_blank" rel="noopener noreferrer" className="social-link github" aria-label="GitHub"><SocialIcons.GitHub /></a>
             <a href="https://www.instagram.com/rafael.araujo1992/" target="_blank" rel="noopener noreferrer" className="social-link instagram" aria-label="Instagram"><SocialIcons.Instagram /></a>
@@ -31,7 +32,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero-visual">
+        <div className="hero-visual hero-visual-repositioned">
           <div className="profile-image-container">
             <img src="https://media.licdn.com/dms/image/v2/D4D03AQHSlY6XjNRdKg/profile-displayphoto-scale_100_100/B4DaDQqkChHwAc-/0/1790207216353?e=1792627200&v=beta&t=XXDNanbiJ3EBcxEWmomt7vFykOb_dszipld2O-gyf-g" alt="Rafael Araujo" className="profile-image" />
             <div className="profile-orb"></div>
