@@ -1589,3 +1589,15 @@ section {
   .timeline-company { align-items: flex-start; }
   .timeline-chevron { margin-left: auto; }
 }
+
+/* Hero photo repositioning and WhatsApp */
+.hero-visual-repositioned { align-items: flex-end; }
+.hero-visual-repositioned .profile-image-container {
+  transform: translateY(34px);
+  z-index: 1;
+}
+.hero-visual-repositioned .floating-cards { z-index: 4; }
+.hero-social .whatsapp { color: #25d366; }
+@media (max-width: 900px) {
+  .hero-visual-repositioned .profile-image-container { transform: translateY(10px); }
+}
