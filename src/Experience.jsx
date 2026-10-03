@@ -7,7 +7,7 @@ const experiences = [
     { icon: ClipboardList, text: 'Acompanhamento de ordens de serviço, peças, mão de obra e inspeções' },
     { icon: BarChart3, text: 'Controle de custos, disponibilidade e produtividade das oficinas' }
   ]},
-  { company: 'Transportadora SIDER', role: 'Consultor', period: 'jul. de 2026 — set. de 2026', location: 'Limeira, SP · No local', description: 'Atuação consultiva em operação de transporte rodoviário, apoiando a organização da rotina operacional, programação e acompanhamento das demandas de frota e motoristas.', highlights: [
+  { logoUrl: 'https://media.licdn.com/dms/image/v2/C4D0BAQFgkw9sM-jgqg/company-logo_200_200/company-logo_200_200/0/1631341938535?e=1792627200&v=beta&t=7tqSM5SBvE0YpjDixQ8bZNOBzUG27MJMik3SVMBU6dY', company: 'Transportadora SIDER', role: 'Consultor', period: 'jul. de 2026 — set. de 2026', location: 'Limeira, SP · No local', description: 'Atuação consultiva em operação de transporte rodoviário, apoiando a organização da rotina operacional, programação e acompanhamento das demandas de frota e motoristas.', highlights: [
     { icon: Route, text: 'Apoio à programação e acompanhamento das operações de transporte' },
     { icon: Users, text: 'Interface com motoristas e rotina operacional' },
     { icon: BarChart3, text: 'Análise de ocorrências e apoio à melhoria dos processos' }
@@ -39,13 +39,13 @@ const experiences = [
     { icon: ClipboardList, text: 'Rodopar, CTes, manifestos, planilhas de prazos e checklists de veículos' },
     { icon: Users, text: 'Consulta e pesquisa de motoristas para programação de viagens' }
   ]},
-  { company: 'Grupo Cargo Polo', role: 'Analista de logística', period: 'abr. de 2021 — fev. de 2022', location: 'Ribeirão Preto e Região', description: 'Rotinas de documentação, programação e acompanhamento de viagens, com contato com motoristas, parceiros comerciais e clientes.', highlights: [
+  { logoUrl: 'https://grupocargopolo.com.br/wp-content/uploads/2022/08/logo-topo-site.png', company: 'Grupo Cargo Polo', role: 'Analista de logística', period: 'abr. de 2021 — fev. de 2022', location: 'Ribeirão Preto e Região', description: 'Rotinas de documentação, programação e acompanhamento de viagens, com contato com motoristas, parceiros comerciais e clientes.', highlights: [
     { icon: Laptop2, text: 'Emissão de CTes, manifestos e contratos de motoristas' },
     { icon: Route, text: 'Acompanhamento de viagens, coletas e entregas conforme agenda' },
     { icon: ShieldCheck, text: 'Cadastro e consulta de motoristas com análise de risco' },
     { icon: Users, text: 'Cadastro de parceiros, contratos e relacionamento com clientes e agregados' }
   ]},
-  { company: 'Grupo Cargo Polo', role: 'Gerenciamento de risco', period: 'abr. de 2021 — jun. de 2021', location: 'Ribeirão Preto, SP', description: 'Atuação no gerenciamento de risco das viagens, monitoramento de veículos e acompanhamento das condições operacionais e de jornada dos motoristas.', highlights: [
+  { logoUrl: 'https://grupocargopolo.com.br/wp-content/uploads/2022/08/logo-topo-site.png', company: 'Grupo Cargo Polo', role: 'Gerenciamento de risco', period: 'abr. de 2021 — jun. de 2021', location: 'Ribeirão Preto, SP', description: 'Atuação no gerenciamento de risco das viagens, monitoramento de veículos e acompanhamento das condições operacionais e de jornada dos motoristas.', highlights: [
     { icon: Route, text: 'Monitoramento com Sascar, Omnilink e PROMATIX' },
     { icon: ShieldCheck, text: 'Abertura de SM e análise de risco das viagens' },
     { icon: BarChart3, text: 'Relatórios de fadiga e controle de jornada' }
