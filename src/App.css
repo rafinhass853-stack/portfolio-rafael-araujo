@@ -1476,3 +1476,46 @@ section {
   .timeline-top { flex-direction: column; gap: 8px; }
   .timeline-highlights, .social-links-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Career / company branding */
+.timeline-company { display: flex; gap: 16px; align-items: flex-start; }
+.company-logo-wrap {
+  width: 58px; height: 58px; flex: 0 0 58px; display: flex; align-items: center; justify-content: center;
+  background: #fff; border-radius: 14px; border: 1px solid var(--border-color); overflow: hidden;
+}
+.company-logo { width: 42px; height: 42px; object-fit: contain; }
+.timeline-company .timeline-top { flex: 1; }
+
+.career-plus-section { background: var(--bg-secondary); }
+.career-plus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.career-panel, .recommendations-block {
+  padding: 24px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 16px;
+}
+.career-panel-title { display: flex; align-items: center; gap: 9px; margin-bottom: 18px; }
+.career-panel-title svg { color: var(--accent-blue); }
+.career-panel-title h3 { font-size: 1.05rem; }
+.career-item { display: flex; flex-direction: column; gap: 4px; padding: 13px 0; border-top: 1px solid rgba(148,163,184,.1); }
+.career-item:first-of-type { border-top: 0; padding-top: 0; }
+.career-item strong { color: var(--text-primary); }
+.career-item span, .career-muted { color: var(--text-secondary); font-size: .9rem; }
+.language-row { display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-top: 1px solid rgba(148,163,184,.1); }
+.language-row:first-of-type { border-top: 0; }
+.language-row span { color: var(--text-secondary); }
+.recommendations-block { margin-top: 18px; }
+.recommendations-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.recommendation-card { position: relative; padding: 22px; border: 1px solid var(--border-color); border-radius: 14px; background: var(--bg-secondary); }
+.recommendation-card p { color: var(--text-secondary); line-height: 1.7; font-size: .92rem; margin-bottom: 14px; }
+.recommendation-card strong { display: block; }
+.recommendation-card span { color: var(--text-muted); font-size: .78rem; }
+.quote-mark { position: absolute; right: 18px; top: 4px; font-size: 3rem; line-height: 1; color: var(--accent-blue); opacity: .35; }
+.career-plus-link { display: flex; justify-content: center; margin-top: 24px; }
+.career-plus-link a { display: inline-flex; align-items: center; gap: 7px; color: var(--accent-blue); text-decoration: none; font-weight: 600; }
+.career-plus-link a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .timeline-company { gap: 10px; }
+  .company-logo-wrap { width: 48px; height: 48px; flex-basis: 48px; }
+  .company-logo { width: 34px; height: 34px; }
+  .career-plus-grid, .recommendations-grid { grid-template-columns: 1fr; }
+}
