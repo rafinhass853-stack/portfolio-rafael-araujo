@@ -1,163 +1,49 @@
-// Contact.jsx - COM ÍCONES SVG DAS REDES SOCIAIS E EMAIL ATUALIZADO
-import React, { useState } from 'react';
-import { Send, Mail, Phone, MapPin } from 'lucide-react';
+import React from 'react';
+import { Mail, MapPin, Linkedin, Github, Instagram, Facebook, ArrowUpRight } from 'lucide-react';
 
-// Ícones SVG das redes sociais
-const SocialIcons = {
-  LinkedIn: () => (
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-    </svg>
-  ),
-  GitHub: () => (
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.123-.3-.535-1.52.117-3.16 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.64.24 2.86.118 3.16.768.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.476 5.92.43.37.824 1.102.824 2.22 0 1.602-.015 2.894-.015 3.287 0 .322.216.694.825.577C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-    </svg>
-  ),
-  Instagram: () => (
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-    </svg>
-  ),
-  Facebook: () => (
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-    </svg>
-  )
-};
+const links = [
+  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/rafael-araujo1992/', Icon: Linkedin },
+  { label: 'GitHub', url: 'https://github.com/rafinhass853-stack', Icon: Github },
+  { label: 'Instagram', url: 'https://www.instagram.com/rafael.araujo1992/', Icon: Instagram },
+  { label: 'Facebook', url: 'https://www.facebook.com/rafael.araujo.678732', Icon: Facebook }
+];
 
 export default function Contact() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const socialLinks = [
-    { icon: SocialIcons.LinkedIn, url: "https://www.linkedin.com/in/rafael-araujo1992/", label: "LinkedIn", color: "#0a66c2" },
-    { icon: SocialIcons.GitHub, url: "https://github.com/rafinhass853-stack", label: "GitHub", color: "#cbd5e1" },
-    { icon: SocialIcons.Instagram, url: "https://www.instagram.com/rafael.araujo1992/", label: "Instagram", color: "#e1306c" },
-    { icon: SocialIcons.Facebook, url: "https://www.facebook.com/rafael.araujo.678732", label: "Facebook", color: "#1877f2" }
-  ];
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
-      setFormData({ name: '', email: '', message: '' });
-    }, 1500);
-  };
-
   return (
     <section id="contato" className="contact-section reveal">
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Contato</span>
-          <h2>Vamos <span className="gradient-text">conversar?</span></h2>
-          <p className="section-description">
-            Quer discutir soluções logísticas inovadoras ou novos projetos de software?
-          </p>
+          <h2>Vamos <span className="gradient-text">conversar</span></h2>
+          <p className="section-description">Estou aberto a conversas sobre oportunidades, projetos, tecnologia aplicada à logística e operações.</p>
         </div>
-
-        <div className="contact-grid">
+        <div className="contact-grid contact-grid-simple">
           <div className="contact-info">
             <div className="info-item">
-              <div className="info-icon">
-                <Mail size={20} />
-              </div>
-              <div>
-                <h4>Email</h4>
-                <a href="mailto:rafinhass853@gmail.com">rafinhass853@gmail.com</a>
-              </div>
+              <div className="info-icon"><Mail size={20} /></div>
+              <div><h4>Email</h4><a href="mailto:rafinhass853@gmail.com">rafinhass853@gmail.com</a></div>
             </div>
-            
             <div className="info-item">
-              <div className="info-icon">
-                <Phone size={20} />
-              </div>
-              <div>
-                <h4>WhatsApp</h4>
-                <a href="https://wa.me/5516988318626">(16) 98831-8626</a>
-              </div>
+              <div className="info-icon"><MapPin size={20} /></div>
+              <div><h4>Localização</h4><span>São Carlos, São Paulo, Brasil</span></div>
             </div>
-
-            <div className="info-item">
-              <div className="info-icon">
-                <MapPin size={20} />
-              </div>
-              <div>
-                <h4>Localização</h4>
-                <span>Brasil</span>
-              </div>
-            </div>
-
-            <div className="social-links">
-              <h4>Redes Sociais</h4>
-              <div className="social-icons">
-                {socialLinks.map((link, index) => (
-                  <a 
-                    key={index} 
-                    href={link.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="social-icon"
-                    style={{ '--social-color': link.color }}
-                    aria-label={link.label}
-                  >
-                    <link.icon />
-                  </a>
-                ))}
-              </div>
+            <div className="contact-cta">
+              <strong>Perfil profissional</strong>
+              <p>Experiência em operações logísticas + desenvolvimento de soluções digitais.</p>
+              <a href="https://www.linkedin.com/in/rafael-araujo1992/" target="_blank" rel="noopener noreferrer">Abrir LinkedIn <ArrowUpRight size={16} /></a>
             </div>
           </div>
-
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">Nome</label>
-              <input
-                type="text"
-                id="name"
-                value={formData.name}
-                onChange={(e) => setFormData({...formData, name: e.target.value})}
-                placeholder="Seu nome"
-                required
-              />
+          <div className="contact-social-panel">
+            <h3>Encontre-me online</h3>
+            <p>Meus canais profissionais e projetos estão aqui:</p>
+            <div className="social-links-grid">
+              {links.map(({ label, url, Icon }) => (
+                <a key={label} href={url} target="_blank" rel="noopener noreferrer" className="social-card">
+                  <Icon size={22} /><span>{label}</span><ArrowUpRight size={15} />
+                </a>
+              ))}
             </div>
-            
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                value={formData.email}
-                onChange={(e) => setFormData({...formData, email: e.target.value})}
-                placeholder="seu@email.com"
-                required
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="message">Mensagem</label>
-              <textarea
-                id="message"
-                value={formData.message}
-                onChange={(e) => setFormData({...formData, message: e.target.value})}
-                placeholder="Como posso ajudar você?"
-                rows="4"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" className="btn-submit" disabled={isSubmitting}>
-              {isSubmitting ? (
-                <>Enviando...</>
-              ) : (
-                <>
-                  <Send size={18} />
-                  Enviar mensagem
-                </>
-              )}
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </section>
