@@ -1,5 +1,5 @@
 import React from 'react';
-import { BriefcaseBusiness, MapPin, Users, BarChart3, Route, Laptop2, Wrench } from 'lucide-react';
+import { BriefcaseBusiness, MapPin, Users, BarChart3, Route, Laptop2, Wrench, ChevronDown } from 'lucide-react';
 
 const logo = (domain) => `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
 
@@ -62,8 +62,9 @@ function CompanyLogo({ experience }) {
   const initials = experience.company.split(/\s+/).filter(Boolean).slice(0, 2).map(word => word[0]).join('').toUpperCase();
   return (
     <div className="company-logo-wrap" data-initials={initials}>
-      <img src={experience.logo} alt={`Logo da ${experience.company}`} className="company-logo"
+      <img src={experience.logo} alt="" aria-hidden="true" className="company-logo"
         onError={(event) => { event.currentTarget.style.display = 'none'; }} />
+      <span className="company-logo-fallback" aria-hidden="true">{initials}</span>
     </div>
   );
 }
@@ -77,28 +78,48 @@ export default function Experience() {
           <h2>Experiência <span className="gradient-text">profissional</span></h2>
           <p className="section-description">Toda a trajetória profissional registrada no LinkedIn, do primeiro emprego à atuação atual em gestão de frotas.</p>
         </div>
+
+        <div className="career-summary">
+          <div><strong>17</strong><span>posições</span></div>
+          <div><strong>2008 — atual</strong><span>trajetória profissional</span></div>
+          <div><strong>Logística + tecnologia</strong><span>especialidade atual</span></div>
+        </div>
+
         <div className="timeline">
           {experiences.map((experience, index) => (
-            <article className="timeline-item" key={`${experience.company}-${experience.role}-${experience.period}-${index}`}>
-              <div className="timeline-marker"><BriefcaseBusiness size={18} /></div>
-              <div className="timeline-card">
-                <div className="timeline-company">
-                  <CompanyLogo experience={experience} />
-                  <div className="timeline-top">
-                    <div>
-                      <span className={`timeline-period ${experience.current ? 'current' : ''}`}>{experience.current ? 'EM ATUAÇÃO' : experience.period}</span>
-                      <h3>{experience.company}</h3>
-                      <h4>{experience.role}</h4>
+            <article className={`timeline-item ${experience.current ? 'current-role' : ''}`} key={`${experience.company}-${experience.role}-${experience.period}-${index}`}>
+              <div className="timeline-marker"><BriefcaseBusiness size={17} /></div>
+              <details className="timeline-details" open={experience.current}>
+                <summary className="timeline-card timeline-summary">
+                  <div className="timeline-company">
+                    <CompanyLogo experience={experience} />
+                    <div className="timeline-top">
+                      <div>
+                        <span className={`timeline-period ${experience.current ? 'current' : ''}`}>{experience.current ? 'EM ATUAÇÃO' : experience.period}</span>
+                        <h3>{experience.company}</h3>
+                        <h4>{experience.role}</h4>
+                      </div>
+                      <span className="timeline-location"><MapPin size={14} /> {experience.location}</span>
                     </div>
-                    <span className="timeline-location"><MapPin size={14} /> {experience.location}</span>
+                    <ChevronDown className="timeline-chevron" size={20} />
                   </div>
+                </summary>
+                <div className="timeline-content">
+                  <p>{experience.description}</p>
+                  {experience.highlights.length > 0 && (
+                    <div className="timeline-highlights">
+                      {experience.highlights.map(({ icon: Icon, text }) => (
+                        <div className="timeline-highlight" key={text}><Icon size={17} /><span>{text}</span></div>
+                      ))}
+                    </div>
+                  )}
                 </div>
-                <p>{experience.description}</p>
-                {experience.highlights.length > 0 && <div className="timeline-highlights">{experience.highlights.map(({ icon: Icon, text }) => <div className="timeline-highlight" key={text}><Icon size={17} /><span>{text}</span></div>)}</div>}
-              </div>
+              </details>
             </article>
           ))}
         </div>
+
+        <div className="career-note"><strong>Leitura rápida:</strong> a experiência mais recente aparece aberta; clique em qualquer outra posição para consultar detalhes sem deixar a página excessivamente longa.</div>
       </div>
     </section>
   );
