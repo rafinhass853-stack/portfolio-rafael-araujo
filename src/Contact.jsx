@@ -1,11 +1,11 @@
 import React from 'react';
-import { Mail, MapPin, Linkedin, Github, Instagram, Facebook, ArrowUpRight } from 'lucide-react';
+import { Mail, MapPin, ArrowUpRight } from 'lucide-react';
 
 const links = [
-  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/rafael-araujo1992/', Icon: Linkedin },
-  { label: 'GitHub', url: 'https://github.com/rafinhass853-stack', Icon: Github },
-  { label: 'Instagram', url: 'https://www.instagram.com/rafael.araujo1992/', Icon: Instagram },
-  { label: 'Facebook', url: 'https://www.facebook.com/rafael.araujo.678732', Icon: Facebook }
+  { label: 'LinkedIn', mark: 'in', url: 'https://www.linkedin.com/in/rafael-araujo1992/' },
+  { label: 'GitHub', mark: 'GH', url: 'https://github.com/rafinhass853-stack' },
+  { label: 'Instagram', mark: 'IG', url: 'https://www.instagram.com/rafael.araujo1992/' },
+  { label: 'Facebook', mark: 'f', url: 'https://www.facebook.com/rafael.araujo.678732' }
 ];
 
 export default function Contact() {
@@ -37,9 +37,9 @@ export default function Contact() {
             <h3>Encontre-me online</h3>
             <p>Meus canais profissionais e projetos estão aqui:</p>
             <div className="social-links-grid">
-              {links.map(({ label, url, Icon }) => (
+              {links.map(({ label, mark, url }) => (
                 <a key={label} href={url} target="_blank" rel="noopener noreferrer" className="social-card">
-                  <Icon size={22} /><span>{label}</span><ArrowUpRight size={15} />
+                  <span className="social-mark" aria-hidden="true">{mark}</span><span>{label}</span><ArrowUpRight size={15} />
                 </a>
               ))}
             </div>
