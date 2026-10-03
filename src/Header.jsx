@@ -1,4 +1,3 @@
-// Header.jsx
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -7,43 +6,40 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 40);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const navLinks = [
-    { href: "#sobre", label: "Sobre" },
-    { href: "#competencias", label: "Competências" },
-    { href: "#projetos", label: "Projetos" },
-    { href: "#contato", label: "Contato" }
+    { href: '#sobre', label: 'Sobre' },
+    { href: '#experiencia', label: 'Experiência' },
+    { href: '#competencias', label: 'Competências' },
+    { href: '#projetos', label: 'Projetos' },
+    { href: '#contato', label: 'Contato' }
   ];
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <div className="logo">
+        <a className="logo" href="#topo" onClick={() => setIsMenuOpen(false)} aria-label="Rafael Araujo - início">
+          <span className="logo-mark">RA</span>
           <span className="logo-text">Rafael Araujo</span>
-        </div>
+        </a>
 
         <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-          {navLinks.map((link, index) => (
-            <a 
-              key={index} 
-              href={link.href}
-              onClick={() => setIsMenuOpen(false)}
-            >
+          {navLinks.map(link => (
+            <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)}>
               {link.label}
             </a>
           ))}
         </nav>
 
-        <button 
+        <button
           className="menu-toggle"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
