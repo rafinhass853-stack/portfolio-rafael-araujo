@@ -2,7 +2,7 @@ import React from 'react';
 import { BriefcaseBusiness, MapPin, Users, BarChart3, Route, Laptop2, Wrench, ChevronDown, ClipboardList, ShieldCheck, Package, Factory, Hospital, CreditCard } from 'lucide-react';
 
 const experiences = [
-  { current: true, company: 'Eixo SP Concessionária de Rodovias S.A.', role: 'Analista de Frotas', period: 'set. de 2026 — atual', location: 'Itirapina, SP · No local', description: 'Atuação no planejamento, programação e controle de manutenção da frota, acompanhando disponibilidade, custos, ordens de serviço, peças, mão de obra e indicadores de desempenho.', highlights: [
+  { current: true, logoUrl: 'https://eixosp.com.br/wp-content/themes/EixoSP/img/logo-top.png', company: 'Eixo SP Concessionária de Rodovias S.A.', role: 'Analista de Frotas', period: 'set. de 2026 — atual', location: 'Itirapina, SP · No local', description: 'Atuação no planejamento, programação e controle de manutenção da frota, acompanhando disponibilidade, custos, ordens de serviço, peças, mão de obra e indicadores de desempenho.', highlights: [
     { icon: Wrench, text: 'PPCM: planejamento, programação e controle de manutenção preventiva e corretiva' },
     { icon: ClipboardList, text: 'Acompanhamento de ordens de serviço, peças, mão de obra e inspeções' },
     { icon: BarChart3, text: 'Controle de custos, disponibilidade e produtividade das oficinas' }
@@ -12,28 +12,28 @@ const experiences = [
     { icon: Users, text: 'Interface com motoristas e rotina operacional' },
     { icon: BarChart3, text: 'Análise de ocorrências e apoio à melhoria dos processos' }
   ]},
-  { company: 'TG Logistica e Transportes', role: 'Coordenador de logística', period: 'set. de 2023 — jul. de 2026', location: 'Mogi Guaçu, SP · Híbrido', description: 'Responsável pelo planejamento diário de rotas e cronogramas de entrega, coordenação de motoristas e monitoramento em tempo real, utilizando o TMS Rodopar para apoiar a ocupação da frota e o cumprimento dos prazos.', highlights: [
+  { logoUrl: 'https://tglogistica.com.br/wp-content/webp-express/webp-images/uploads/2022/11/tglogistica.png.webp', company: 'TG Logistica e Transportes', role: 'Coordenador de logística', period: 'set. de 2023 — jul. de 2026', location: 'Mogi Guaçu, SP · Híbrido', description: 'Responsável pelo planejamento diário de rotas e cronogramas de entrega, coordenação de motoristas e monitoramento em tempo real, utilizando o TMS Rodopar para apoiar a ocupação da frota e o cumprimento dos prazos.', highlights: [
     { icon: Users, text: 'Coordenação de motoristas e monitoramento operacional em tempo real' },
     { icon: Route, text: 'Planejamento de rotas, cronogramas e ocupação da frota com TMS Rodopar' },
     { icon: BarChart3, text: 'Acompanhamento de KPIs, atrasos e lead times críticos' },
     { icon: Laptop2, text: 'Gerenciamento de processos e interface comercial com clientes' }
   ]},
-  { company: 'Transportadora Danglares Duarte', role: 'Coordenador de logística', period: 'ago. de 2025 — set. de 2025', location: 'Araraquara, SP · No local', description: 'Coordenação da rotina logística, acompanhando programação, execução das viagens e tratativas necessárias para manter o fluxo operacional.', highlights: [
+  { logoUrl: 'https://static.wixstatic.com/media/f7fc0f_7744962ca78b4801a7e1e4f0f8c35f10~mv2.png/v1/fill/w_220,h_220,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/duartelogodfundo.png', company: 'Transportadora Danglares Duarte', role: 'Coordenador de logística', period: 'ago. de 2025 — set. de 2025', location: 'Araraquara, SP · No local', description: 'Coordenação da rotina logística, acompanhando programação, execução das viagens e tratativas necessárias para manter o fluxo operacional.', highlights: [
     { icon: Route, text: 'Programação e acompanhamento de viagens' },
     { icon: Users, text: 'Interface com motoristas e operação' },
     { icon: ClipboardList, text: 'Tratativa de ocorrências e acompanhamento de prazos' }
   ]},
-  { company: 'AGA LOGÍSTICA', role: 'Coordenador de logística', period: 'ago. de 2023 — set. de 2023', location: 'Araraquara, SP · No local', description: 'Gestão operacional direta de contas de alta complexidade, com programação de cargas, acompanhamento da distribuição e atendimento das demandas dos clientes.', highlights: [
+  { logoUrl: 'https://agalogistica.com.br/wp-content/uploads/logo-logistica.png', company: 'AGA LOGÍSTICA', role: 'Coordenador de logística', period: 'ago. de 2023 — set. de 2023', location: 'Araraquara, SP · No local', description: 'Gestão operacional direta de contas de alta complexidade, com programação de cargas, acompanhamento da distribuição e atendimento das demandas dos clientes.', highlights: [
     { icon: Users, text: 'Atuação com contas como Heineken, Nestlé, Italac e Solven' },
     { icon: Route, text: 'Programação de cargas e coordenação da distribuição' },
     { icon: BarChart3, text: 'Acompanhamento de estoque, desvios e planos de ação' }
   ]},
-  { company: 'RDR Soluções Logísticas', role: 'Programador de logística pleno', period: 'jan. de 2023 — ago. de 2023', location: 'Ribeirão Preto, SP · Presencial', description: 'Atuação no planejamento e programação logística, com foco em gestão de frota, economia de combustível, otimização de custos, monitoramento e gerenciamento de risco.', highlights: [
+  { logoUrl: 'https://rdrsolucoeslogisticas.com.br/wp-content/uploads/2019/04/logo.png', company: 'RDR Soluções Logísticas', role: 'Programador de logística pleno', period: 'jan. de 2023 — ago. de 2023', location: 'Ribeirão Preto, SP · Presencial', description: 'Atuação no planejamento e programação logística, com foco em gestão de frota, economia de combustível, otimização de custos, monitoramento e gerenciamento de risco.', highlights: [
     { icon: Route, text: 'Monitoramento com Sighra, Sascar e Autotrac e gerenciamento de risco' },
     { icon: Laptop2, text: 'Rodopar para emissão de CTe, Manifestos e controles operacionais' },
     { icon: BarChart3, text: 'Estratégias de economia de combustível e otimização de custos' }
   ]},
-  { company: 'RDR Soluções Logísticas', role: 'Analista de logística', period: 'jun. de 2022 — jan. de 2023', location: 'Ribeirão Preto, SP', description: 'Acompanhamento de coletas e entregas, monitoramento de veículos, gerenciamento de risco e atualização dos controles necessários para cumprimento dos prazos.', highlights: [
+  { logoUrl: 'https://rdrsolucoeslogisticas.com.br/wp-content/uploads/2019/04/logo.png', company: 'RDR Soluções Logísticas', role: 'Analista de logística', period: 'jun. de 2022 — jan. de 2023', location: 'Ribeirão Preto, SP', description: 'Acompanhamento de coletas e entregas, monitoramento de veículos, gerenciamento de risco e atualização dos controles necessários para cumprimento dos prazos.', highlights: [
     { icon: Route, text: 'Monitoramento com Sighra, SASCAR, ONIXSAT e Autotrac' },
     { icon: ShieldCheck, text: 'Gerenciamento de risco, abertura de SM e acompanhamento de viagens' },
     { icon: ClipboardList, text: 'Rodopar, CTes, manifestos, planilhas de prazos e checklists de veículos' },
@@ -71,7 +71,7 @@ const experiences = [
     { icon: Users, text: 'Atendimento direto aos usuários da rodovia' },
     { icon: ClipboardList, text: 'Conferência e cumprimento dos procedimentos operacionais da praça' }
   ]},
-  { company: 'Termoeps Comercial e Industrial Ltda EPP', role: 'Encarregado geral', period: 'jan. de 2013 — out. de 2014', location: 'São Simão, SP', description: 'Atuação como encarregado geral, acompanhando a rotina operacional e apoiando a organização das atividades da equipe e da produção.', highlights: [
+  { logoUrl: 'http://www.termoeps.com.br/wp-content/uploads/2020/04/logo-termo-grande.png', company: 'Termoeps Comercial e Industrial Ltda EPP', role: 'Encarregado geral', period: 'jan. de 2013 — out. de 2014', location: 'São Simão, SP', description: 'Atuação como encarregado geral, acompanhando a rotina operacional e apoiando a organização das atividades da equipe e da produção.', highlights: [
     { icon: Users, text: 'Acompanhamento e distribuição das atividades da equipe' },
     { icon: Factory, text: 'Apoio à rotina operacional e produtividade' },
     { icon: ClipboardList, text: 'Organização de tarefas e acompanhamento da execução' }
@@ -86,7 +86,7 @@ const experiences = [
     { icon: Package, text: 'Movimentação e organização de materiais' },
     { icon: ClipboardList, text: 'Apoio à equipe e cumprimento das rotinas de produção' }
   ]},
-  { company: 'Supermercados Gricki', role: 'Empacotador', period: 'jul. de 2008 — abr. de 2009', location: 'São Simão, SP', description: 'Primeira experiência profissional, com atendimento ao público, organização e apoio à operação de frente de caixa.', highlights: [
+  { logoUrl: 'https://www.supermercadosgricki.com.br/wp-content/uploads/2026/06/result_Logo-Full-Gricki_OK-2.png', company: 'Supermercados Gricki', role: 'Empacotador', period: 'jul. de 2008 — abr. de 2009', location: 'São Simão, SP', description: 'Primeira experiência profissional, com atendimento ao público, organização e apoio à operação de frente de caixa.', highlights: [
     { icon: Users, text: 'Atendimento e apoio aos clientes' },
     { icon: Package, text: 'Organização e acondicionamento das compras' },
     { icon: ClipboardList, text: 'Apoio à rotina da frente de caixa e organização do setor' }
@@ -96,7 +96,14 @@ const experiences = [
 function CompanyLogo({ experience }) {
   const words = experience.company.replace(/[^A-Za-zÀ-ÿ0-9 ]/g, '').split(/\s+/).filter(Boolean);
   const initials = words.length >= 2 ? `${words[0][0]}${words[1][0]}`.toUpperCase() : (words[0]?.slice(0, 2) || 'EX').toUpperCase();
-  return <div className="company-logo-wrap" aria-label={experience.company}><span className="company-logo-mark" aria-hidden="true">{initials}</span></div>;
+  return (
+    <div className="company-logo-wrap" aria-label={experience.company}>
+      {experience.logoUrl ? (
+        <img className="company-logo-image" src={experience.logoUrl} alt="" loading="lazy" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'inline-flex'; }} />
+      ) : null}
+      <span className="company-logo-mark" aria-hidden="true" style={{ display: experience.logoUrl ? 'none' : 'inline-flex' }}>{initials}</span>
+    </div>
+  );
 }
 
 export default function Experience() {
