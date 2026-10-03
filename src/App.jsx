@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './Header';
 import Hero from './Hero';
 import About from './About';
@@ -9,9 +10,10 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 import OnlineVisitors from './OnlineVisitors';
+import VisitsDashboard from './VisitsDashboard';
 import './App.css';
 
-function App() {
+function Portfolio() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -20,7 +22,6 @@ function App() {
     }, { threshold: 0.08 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
     return () => observer.disconnect();
   }, []);
 
@@ -39,6 +40,17 @@ function App() {
       <Footer />
       <OnlineVisitors />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/admin/visitas" element={<VisitsDashboard />} />
+        <Route path="*" element={<Portfolio />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
