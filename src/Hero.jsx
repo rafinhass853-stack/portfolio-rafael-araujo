@@ -33,7 +33,7 @@ export default function Hero() {
 
         <div className="hero-visual">
           <div className="profile-image-container">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFqg6tOekB-1g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727113872486?e=1745452800&v=beta&t=1X2qQ1pMgG9_0d8bVv9ZxVj0Xn_5YH-KfYH8XkHbR-0" alt="Rafael Araujo" className="profile-image" />
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHSlY6XjNRdKg/profile-displayphoto-scale_100_100/B4DaDQqkChHwAc-/0/1790207216353?e=1792627200&v=beta&t=XXDNanbiJ3EBcxEWmomt7vFykOb_dszipld2O-gyf-g" alt="Rafael Araujo" className="profile-image" />
             <div className="profile-orb"></div>
           </div>
           <div className="floating-cards">
