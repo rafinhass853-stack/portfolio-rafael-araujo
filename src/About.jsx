@@ -2,7 +2,7 @@ import React from 'react';
 import { Truck, Code2, BarChart3, Workflow } from 'lucide-react';
 
 const features = [
-  { icon: Truck, title: 'Operação de transporte', description: 'Experiência prática com carga seca/sider, programação, disponibilidade de frota e tratativas do dia a dia.' },
+  { icon: Truck, title: 'Operação de transporte', description: 'Experiência com gestão de frota, manutenção, disponibilidade, programação e tratativas operacionais.' },
   { icon: BarChart3, title: 'Indicadores & performance', description: 'Acompanhamento de KPIs, análise de desvios e uso de dados para apoiar decisões operacionais.' },
   { icon: Code2, title: 'Tecnologia aplicada', description: 'Desenvolvimento de aplicações web e mobile para aproximar informação, pessoas e operação.' },
   { icon: Workflow, title: 'Processos & melhoria', description: 'Identificação de gargalos, automações e construção de fluxos mais simples para a equipe.' }
@@ -20,7 +20,7 @@ export default function About() {
         <div className="about-grid">
           <div className="about-text">
             <p>
-              Sou profissional de <strong>Logística e Operações</strong>, com mais de sete anos de experiência no setor de transporte. Ao longo da carreira, atuei próximo de motoristas, frota, programação, indicadores e tratativas operacionais.
+              Sou profissional de <strong>Logística e Operações</strong>, com mais de sete anos de experiência no setor de transporte. Atualmente, atuo como Analista de Frotas na Eixo SP, com foco em manutenção, disponibilidade, custos, indicadores e apoio ao desempenho da frota.
             </p>
             <p>
               Em paralelo, desenvolvo soluções digitais para problemas que encontro na prática: dashboards, automações, aplicações web/mobile, rastreamento, geolocalização e ferramentas para apoiar decisões.
