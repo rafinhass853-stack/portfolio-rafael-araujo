@@ -8,6 +8,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
+import OnlineVisitors from './OnlineVisitors';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     }, { threshold: 0.08 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
     return () => observer.disconnect();
   }, []);
 
@@ -35,6 +37,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <OnlineVisitors />
     </div>
   );
 }
