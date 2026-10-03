@@ -10,7 +10,7 @@
  */
 const firebaseConfig = {
   projectId: 'rafaelaraujo-15a60',
-  databaseURL: 'COLOQUE_AQUI_A_DATABASE_URL_DO_FIREBASE'
+  databaseURL: 'https://rafaelaraujo-15a60-default-rtdb.firebaseio.com/'
 };
 
 if (
