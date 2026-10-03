@@ -15,9 +15,9 @@ export default function Hero() {
         <div className="hero-content">
           <div className="hero-badge"><span className="pulse-dot"></span>Logística + Tecnologia</div>
           <h1 className="hero-title"><span>Rafael</span> <span className="gradient-text">Araujo</span></h1>
-          <p className="hero-subtitle">Gestão de Operações · Logística · Tecnologia aplicada ao transporte</p>
+          <p className="hero-subtitle">Analista de Frotas · Logística · Tecnologia aplicada à operação</p>
           <p className="hero-description">
-            Profissional de logística com mais de 7 anos de experiência em transporte, gestão de operações e frotas, unindo conhecimento de campo e desenvolvimento de software para transformar problemas operacionais em soluções práticas.
+            Profissional de logística com mais de 7 anos de experiência, atualmente como Analista de Frotas na Eixo SP, atuando com manutenção, disponibilidade, custos e indicadores, além de desenvolvimento de soluções digitais.
           </p>
           <div className="hero-actions">
             <a href="#contato" className="btn-primary"><Mail size={18} /> Fale comigo</a>
@@ -45,7 +45,7 @@ export default function Hero() {
       </div>
       <div className="hero-proof">
         <span><strong>São Carlos/SP</strong> · Interior paulista</span>
-        <span><strong>Operações</strong> · Frota · KPIs · Processos</span>
+        <span><strong>Frotas</strong> · Manutenção · Custos · Indicadores</span>
         <span><strong>Stack</strong> · React · Firebase · Node · Mobile</span>
       </div>
     </section>
