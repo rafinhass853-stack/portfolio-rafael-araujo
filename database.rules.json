@@ -6,6 +6,23 @@
         ".write": true,
         ".validate": "newData.hasChildren(['connectedAt']) && newData.child('connectedAt').isNumber()"
       }
+    },
+    "analytics": {
+      ".read": true,
+      "totalVisits": {
+        ".write": true,
+        ".validate": "newData.isNumber() && newData.val() >= 0"
+      },
+      "lastVisit": {
+        ".write": true,
+        ".validate": "newData.isNumber()"
+      },
+      "daily": {
+        "$date": {
+          ".write": true,
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        }
+      }
     }
   }
 }
