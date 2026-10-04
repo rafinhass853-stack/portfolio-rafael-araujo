@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import Header from './Header';
 import Hero from './Hero';
 import About from './About';
@@ -20,7 +19,6 @@ function Portfolio() {
         if (entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold: 0.08 });
-
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     return () => observer.disconnect();
   }, []);
@@ -28,30 +26,13 @@ function Portfolio() {
   return (
     <div className="app">
       <Header />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <CareerPlus />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
+      <main><Hero /><About /><Experience /><CareerPlus /><Skills /><Projects /><Contact /></main>
       <Footer />
       <OnlineVisitors />
     </div>
   );
 }
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/admin/visitas" element={<VisitsDashboard />} />
-        <Route path="*" element={<Portfolio />} />
-      </Routes>
-    </BrowserRouter>
-  );
+export default function App() {
+  return window.location.pathname === '/admin/visitas' ? <VisitsDashboard /> : <Portfolio />;
 }
-
-export default App;
